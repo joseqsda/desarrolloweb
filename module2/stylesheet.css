@@ -1,0 +1,91 @@
+/*********** Base Style ***********/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* section {
+    width: 100%;
+} */
+
+.mediumBox, .largebox {
+    background-color: grey;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.titleBox {
+    background-color: brown;
+    height: 50px;  
+    width: 175px;
+    position: absolute;
+    right: -1px; /* double border hidden */
+    top: -1px;  /* double border hidden */
+    border: 1px solid black;
+    line-height: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.content {
+    padding: 70px 20px 20px 20px;
+    text-align: left;
+}
+
+.bg-chicken {
+    background-color: pink;
+}
+
+.bg-sushi {
+    background-color: rgb(194, 173, 115);
+}
+
+h6 {
+    text-align: center;
+    color: lightgray;
+}
+
+/*********** desktop mode only 992***********/
+
+@media (min-width: 992px) {
+    .mediumBox, .largebox {
+        width: 33.333333333%;
+        float: left;
+    }
+
+    h6 {
+        clear: both;
+    }
+}
+
+/*********** tablet mode only 768/991***********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mediumBox {
+        width: 50%;
+        float: left;
+    }
+
+    .largebox {
+        width: 100%;
+        clear: left;
+     }
+
+    h6 {
+        clear: both;
+    }
+}
